@@ -17,7 +17,7 @@ export const appConfig = {
     // 数据库表主键方案 default（mysql 自带）time（时序 ID）
     tablePrimaryKey: 'default',
     // 无限制API列表
-    freeApis: ['/', '/favicon.*', '/public/**'],
+    freeApis: ['/', '/favicon.*', '/public/**', '/api/admin/adminLogin'],
     // 白名单API列表,
     whiteApis: [],
     // 黑名单API列表
