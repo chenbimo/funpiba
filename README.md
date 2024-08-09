@@ -1,4 +1,4 @@
-# yiapi 是什么？
+# funpi 是什么？
 
 中文名称 `易接口`。
 
@@ -6,7 +6,7 @@
 
 ## 文档教程
 
-[文档地址 https://yicode.tech](https://yicode.tech/2-开源/3-yiapi/1-基本简介/1-基本介绍.html)
+[文档地址 https://yicode.tech](https://yicode.tech/2-开源/3-funpi/1-基本简介/1-基本介绍.html)
 
 ## 功能特点
 
@@ -45,7 +45,7 @@
 
 ## 实际效果
 
-使用 `yiapi` + `vue3` 研发的免费开源的 `(yiadmin) 易管理` 后台管理系统。
+使用 `funpi` + `vue3` 研发的免费开源的 `(yiadmin) 易管理` 后台管理系统。
 
 ![随易科技](https://static.yicode.tech/images/202306/20230615215924.png)
 
@@ -73,7 +73,7 @@
 
 ## 版权说明
 
-`yiapi(易接口)` 使用 `Apache 2.0` 协议开源
+`funpi(易接口)` 使用 `Apache 2.0` 协议开源
 
 > 一句话总结：开源不等于放弃版权，不可侵犯原作者版权，改动处要做说明，可以闭源使用。
 

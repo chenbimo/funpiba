@@ -1,2 +1,2 @@
-import { syncMysql } from 'yiapi';
+import { syncMysql } from 'funpi';
 syncMysql();

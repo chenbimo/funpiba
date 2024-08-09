@@ -1,13 +1,9 @@
-// 工具函数
-import { fnRoute, fnSchema, appConfig } from 'yiapi';
-// 配置文件
-// 数据库表
-import { tableData } from '../../tables/example.js';
+import { fnRoute, fnSchema, fnField, appConfig } from 'yiapi';
+import { tableData } from '../../tables/news.js';
 // 接口元数据
 import { metaConfig } from './_meta.js';
 
 export default async (fastify) => {
-    // 当前文件的路径，fastify 实例
     fnRoute(import.meta.url, fastify, metaConfig, {
         // 请求参数约束
         schemaRequest: {
@@ -20,11 +16,10 @@ export default async (fastify) => {
         },
 
         // 执行函数
-        apiHandler: async (req, res) => {
+        apiHandler: async (req) => {
             try {
                 const newsModel = fastify.mysql //
-                    .table('news')
-                    .modify(function (qb) {});
+                    .table('news');
 
                 // 记录总数
                 const { totalCount } = await newsModel
@@ -35,7 +30,7 @@ export default async (fastify) => {
                 const rows = await newsModel
                     .clone() //
                     .orderBy('created_at', 'desc')
-                    .selectData(req.body.page, req.body.limit);
+                    .selectData(req.body.page, req.body.limit, fnField(tableData));
 
                 return {
                     ...appConfig.http.SELECT_SUCCESS,

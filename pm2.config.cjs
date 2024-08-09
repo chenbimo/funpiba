@@ -3,7 +3,7 @@ module.exports = {
         {
             name: 'yicode_demo',
             instances: 'max',
-            script: './yiapi.js',
+            script: './funpi.js',
             exec_mode: 'cluster',
             watch: false,
             autorestart: true,
