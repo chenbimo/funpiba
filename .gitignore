@@ -4,12 +4,10 @@ logs
 npm-debug.log*
 esdata
 data
-.npmrc
 .cache
 lab
 labs
 cache
-.npmrc
 .VSCodeCounter
 oclif.manifest.json
 dist
@@ -23,6 +21,7 @@ CHANGELOG.md
 note.md
 .changeset
 addons2
+lock.*
 
 # Editor directories and files
 .vscode/*

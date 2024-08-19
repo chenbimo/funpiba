@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: 'yicode_demo',
+            name: 'funpiba',
             instances: 'max',
             script: './funpi.js',
             exec_mode: 'cluster',
