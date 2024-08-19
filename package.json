@@ -50,9 +50,12 @@
         "type": "git",
         "url": "https://github.com/chenbimo/yicode.git"
     },
-    "dependencies": {},
+    "dependencies": {
+        "funpi": "^6.0.3",
+        "yidash": "^1.5.0"
+    },
     "devDependencies": {
-        "lint-staged": "^15.2.8",
+        "lint-staged": "^15.2.9",
         "nodemon": "^3.1.4",
         "prettier": "^3.3.3",
         "simple-git-hooks": "^2.11.1"
