@@ -1,7 +1,7 @@
 {
-    "name": "yiserver",
+    "name": "funpiba",
     "version": "6.0.0",
-    "description": "易接口模板",
+    "description": "放屁吧模板",
     "main": "funpi.js",
     "type": "module",
     "private": false,
