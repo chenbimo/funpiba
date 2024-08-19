@@ -4,7 +4,7 @@ export const appConfig = {
     // 加密盐
     md5Salt: 'funpi123456',
     // 监听端口
-    port: 3000,
+    port: 3001,
     // 监听主机
     host: '127.0.0.1',
     // 超级管理员密码
@@ -12,7 +12,7 @@ export const appConfig = {
     // 是否进行参数验证
     paramsCheck: false,
     // 是否显示接口文档
-    isSwagger: true,
+    isSwagger: false,
     // TODO: 考虑增加 uuid 类型以及不同的 uuid 格式
     // 数据库表主键方案 default（mysql 自带）time（时序 ID）
     tablePrimaryKey: 'default',

@@ -1,4 +1,4 @@
-import { fnRoute, fnSchema, appConfig } from 'yiapi';
+import { fnRoute, fnSchema, appConfig } from 'funpi';
 import { metaConfig } from './_meta.js';
 
 export default async (fastify) => {

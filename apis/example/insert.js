@@ -1,5 +1,5 @@
-import { fnRoute, fnSchema, appConfig } from 'yiapi';
-import { tableData } from '../../tables/news.js';
+import { fnRoute, fnSchema, appConfig } from 'funpi';
+import { tableData } from '../../tables/example.js';
 import { metaConfig } from './_meta.js';
 
 export default async (fastify) => {
@@ -8,10 +8,10 @@ export default async (fastify) => {
         schemaRequest: {
             type: 'object',
             properties: {
-                nickname: fnSchema(tableData.nickname),
-                age: fnSchema(tableData.age)
+                title: fnSchema(tableData.title),
+                content: fnSchema(tableData.content)
             },
-            required: ['title']
+            required: ['title', 'content']
         },
 
         // 执行函数

@@ -1,5 +1,5 @@
-import { fnRoute, fnSchema, appConfig } from 'yiapi';
-import { tableData } from '../../tables/news.js';
+import { fnRoute, fnSchema, appConfig } from 'funpi';
+import { tableData } from '../../tables/example.js';
 import { metaConfig } from './_meta.js';
 
 export default async (fastify) => {
@@ -9,8 +9,8 @@ export default async (fastify) => {
             type: 'object',
             properties: {
                 id: fnSchema('id'),
-                nickname: fnSchema(tableData.nickname),
-                age: fnSchema(tableData.age)
+                title: fnSchema(tableData.title),
+                content: fnSchema(tableData.content)
             },
             required: ['id']
         },
@@ -25,7 +25,6 @@ export default async (fastify) => {
                     .where('id', req.body.id)
                     .updateData({
                         title: req.body.title,
-                        thumbnail: req.body.thumbnail,
                         content: req.body.content
                     });
 

@@ -1,5 +1,5 @@
-import { fnRoute, fnSchema, fnField, appConfig } from 'yiapi';
-import { tableData } from '../../tables/news.js';
+import { fnRoute, fnSchema, fnField, appConfig } from 'funpi';
+import { tableData } from '../../tables/example.js';
 import { metaConfig } from './_meta.js';
 
 export default async (fastify) => {

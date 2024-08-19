@@ -1,5 +1,5 @@
-import { fnRoute, fnSchema, fnField, appConfig } from 'yiapi';
-import { tableData } from '../../tables/news.js';
+import { fnRoute, fnSchema, fnField, appConfig } from 'funpi';
+import { tableData } from '../../tables/example.js';
 // 接口元数据
 import { metaConfig } from './_meta.js';
 
